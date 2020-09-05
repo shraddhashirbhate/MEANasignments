@@ -1,8 +1,24 @@
+const fs = require("fs");
 
-let mod = require("./my.module1");
+let readDemo = () => {
+    const filePath = "C:/Users/SHRADDHA/Desktop/Mean/helloPromise D2/Day2.txt";
+    const fileContent = fs.readFileSync(filePath, { encoding: "utf-8" });
 
-let add = mod.add(5, 7);
-console.log(add);
+    console.log(fileContent);
 
-let sub = mod.sub(9, 6);
-console.log(sub);
+}
+
+let readDemoWithException = () => {
+    try {
+        const filePath = "C:/Users/SHRADDHAs/Desktop/Mean/helloPromise D2/Day2.txt";
+        const fileContent = fs.readFileSync(filePath, { encoding: "utf-8" });
+
+        console.log(fileContent);
+    } catch{
+        console.log("error occurred: no such file or directory");
+    }
+
+}
+
+readDemo();
+readDemoWithException();
