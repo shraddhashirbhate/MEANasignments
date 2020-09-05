@@ -1,5 +1,5 @@
 {
-  "name": "nodejs7-d2",
+  "name": "externalmod",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,5 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.7.2",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1"
+  }
 }
