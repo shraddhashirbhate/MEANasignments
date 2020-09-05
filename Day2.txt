@@ -1,0 +1,62 @@
+Day 2				Date: 25/08/2020
+--------				---------------------
+
+File Systems
+----------------
+*	Read a file using NodeJs
+	There are 2 methods available to do this:
+
+		1) fs.readFile (path [, options] , calllback)
+
+		*   It has three parameters
+		*   It is non-blocking method due to the use of Callback function.
+		*   It is difficult to understand but performance is very good (If u want to 
+		     read excel, etc)
+		*   Difficult to understand the flow
+		*   Exception Handling becomes even more difficult.
+		*   But then why it is usefull ? 
+			Beacuse due to callBack function, nodeJs becomes more powerful.
+			Almost all the functions becomes asynchronous.
+
+
+		2) fs.readFileSync (path [, options])
+
+		*   It has 2 parameters.
+		*   It is a Blocking Method
+		*   It is easy to understand but performance is very poor. 
+
+*	Non-blocking nature of the program is always good.
+	therefore, fs.readFile method is always preffered over 	 fs.readFileSync.
+
+
+*	npm install is helping us to install external module.
+
+*	Promise will help us to execite things one aftre another.
+	there are multiple aynchronous functions that we want execute in a sequential manner.
+	
+*	bluebird is helping us to acheive such tasks with the help of promises.
+
+*  	we want asynchronous but avoiding callback.
+	this thing is getting improved with the help of bluebird.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
